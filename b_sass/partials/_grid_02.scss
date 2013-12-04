@@ -1,0 +1,92 @@
+$content-width: 100%;
+
+.row {
+  clear: both;
+  width: 100%;
+  *zoom: 1;
+  $spans: 12;
+ 
+  @for $i from 1 through $spans {
+    .span#{$i} {
+      float: left;
+      width: $content-width/($spans/$i);
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+  }
+}
+
+.row:before,
+.row:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.row:after {
+  clear: both;
+}
+
+.container,
+article {
+  padding:1px;
+}
+
+#container .item {
+    width:  25%;
+    float: left;  
+    border: 1px solid #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@media (max-width: 767px) {
+  #container .item {
+    width:50%;
+  }
+}
+
+@media (max-width: 480px) {  
+
+  #container .item {
+    width:100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    #container .item {
+      width:33%;
+    }
+ }
+
+@media (min-width: 968px) {
+  #container .item {
+    width:25%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #container .item {
+    width:20%;
+  }
+}
+
+
+// Masonry
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#container {
+ // max-width:960px;
+}
+
+
+
+#container {
+  display:none;
+}

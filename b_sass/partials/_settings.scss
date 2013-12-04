@@ -1,0 +1,135 @@
+
+// Settings
+// Contains all spacing and misc styles
+// ----------------------------------------------
+
+
+//Spacing variables
+$xs: 2px;
+$small: 10px;
+$normal: 20px;
+$medium: 30px;
+$large: 40px;
+$xl: 90px;
+
+
+// Margin classes
+//----------------------------------------------
+.inset-top-xs {
+	margin-top:$xs;
+}
+
+.inset-top-small {
+	margin-top:$small;
+}
+.inset-top-normal {
+	margin-top:$normal;
+}
+.inset-top-medium {
+	margin-top:$medium;
+}
+.inset-top-large {
+	margin-top:$large;
+}
+
+.inset-top-xl {
+	margin-top:$xl;
+}
+
+.inset-bottom-xs {
+	margin-bottom:$xs;
+}
+
+.inset-bottom-small {
+	margin-bottom:$small;
+}
+.inset-bottom-normal {
+	margin-bottom:$normal;
+}
+.inset-bottom-medium {
+	margin-bottom:$medium;
+}
+.inset-bottom-large {
+	margin-bottom:$large;
+}
+
+// Padding classes
+//----------------------------------------------
+.pad-small {
+	padding:$small;
+}
+
+.pad-normal {
+	padding:$normal;
+}
+
+.pad-vert-small {
+	padding-top:$small;
+	padding-bottom:$small;
+}
+.pad-vert-normal {
+	padding-top:$normal;
+	padding-bottom:$normal;
+}
+.pad-vert-medium {
+	padding-top:$medium;
+	padding-bottom:$medium;
+}
+.pad-vert-large {
+	padding-top:$large;
+	padding-bottom:$large;
+}
+
+.pad-top-normal {
+	padding-top:$normal;
+}
+
+.pad-top-xl {
+	padding-top:$xl;
+}
+
+.pad-right-medium {
+	padding-right:$medium;
+}
+
+
+// Image classes
+//----------------------------------------------
+.r-image {
+	max-width:100%;
+	width:100%;
+}
+
+// Positioning
+//----------------------------------------------
+.cf {
+	clear:both;
+}
+
+.fixed {
+	position:fixed;
+}
+
+.pull-right {
+	float:right !important;
+}
+
+.pull-left {
+	float:left;
+}
+
+// Hack remove the important and improve the structure
+.is-first {
+	margin-left:0 !important;
+}
+
+.hidden {
+	display:none;
+}
+
+.loading {
+	position:absolute;
+	top:50%;
+	left:50%;
+	z-index:9999;
+}

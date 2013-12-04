@@ -1,0 +1,15 @@
+// Buttons
+
+.button-1 {
+	background: url('../b_graphics/icon-search-small.svg') no-repeat 0 0;
+	border:0 none;	
+	width:32px;
+	height:32px;
+	position:absolute;
+	top:29px;
+	right:30px;
+}
+
+.button-1:hover {
+	background-position:0 -32px;
+}
