@@ -1,4 +1,4 @@
-MuchlyJava
+SocialMediaSearch
 ==========
 
 Allows you to search for hashtags across twitter and instagram.
